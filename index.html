@@ -6,7 +6,7 @@
     <title>Mahdi Foued | Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,10 +16,11 @@
         <div class="container">
             <div class="logo">Mahdi Foued</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#about" data-en="About" data-ar="نبذة عني">About</a></li>
+                <li><a href="#portfolio" data-en="Portfolio" data-ar="أعمالي">Portfolio</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="تواصل معي">Contact</a></li>
+                <li><button id="langToggle" class="lang-btn" onclick="toggleLanguage()">AR</button></li>
             </ul>
         </div>
     </nav>
@@ -27,11 +28,11 @@
     <!-- Hero -->
     <header id="home" class="hero">
         <div class="container">
-<h1>Hi, I'm <span id="typed-name"></span></h1>
-<p>Web Developer specializing in modern, responsive websites and landing pages.</p>            <p>Web Developer specializing in modern, responsive websites and landing pages.</p>
+            <h1 data-en="Hi, I'm Mahdi Foued" data-ar="مرحباً، أنا مهدي فؤاد">Hi, I'm Mahdi Foued</h1>
+            <p data-en="Web Developer specializing in modern, responsive websites and landing pages." data-ar="مطور ويب متخصص في المواقع الحديثة والمتجاوبة وصفحات الهبوط.">Web Developer specializing in modern, responsive websites and landing pages.</p>
             <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="#portfolio" class="btn btn-primary" data-en="View My Work" data-ar="شاهد أعمالي">View My Work</a>
+                <a href="#contact" class="btn btn-secondary" data-en="Contact Me" data-ar="تواصل معي">Contact Me</a>
             </div>
         </div>
     </header>
@@ -39,49 +40,51 @@
     <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate web developer based in Tunisia. I build clean, fast, and responsive websites using HTML, CSS, and JavaScript. I focus on creating user-friendly designs that help businesses grow online.</p>
+            <h2 data-en="About Me" data-ar="نبذة عني">About Me</h2>
+            <p data-en="I'm a passionate web developer based in Tunisia. I build clean, fast, and responsive websites using HTML, CSS, and JavaScript. I focus on creating user-friendly designs that help businesses grow online." data-ar="أنا مطور ويب شغوف مقيم في تونس. أبني مواقع نظيفة وسريعة ومتجاوبة باستخدام HTML و CSS و JavaScript. أركز على إنشاء تصاميم سهلة الاستخدام تساعد الشركات على النمو عبر الإنترنت.">I'm a passionate web developer based in Tunisia. I build clean, fast, and responsive websites using HTML, CSS, and JavaScript. I focus on creating user-friendly designs that help businesses grow online.</p>
         </div>
     </section>
-<!-- Stats Section -->
-<section class="stats">
-    <div class="container">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <h3 class="counter" data-target="3">0</h3>
-                <p>Projects Completed</p>
-            </div>
-            <div class="stat-item">
-                <h3 class="counter" data-target="100">0</h3>
-                <p>Hours of Coding</p>
-            </div>
-            <div class="stat-item">
-                <h3 class="counter" data-target="5">0</h3>
-                <p>Technologies Learned</p>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="3">0</h3>
+                    <p data-en="Projects Completed" data-ar="مشاريع منجزة">Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="100">0</h3>
+                    <p data-en="Hours of Coding" data-ar="ساعات من البرمجة">Hours of Coding</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="5">0</h3>
+                    <p data-en="Technologies Learned" data-ar="تقنيات تم تعلمها">Technologies Learned</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>My Work</h2>
-            <p class="section-subtitle">Here are some of my recent projects</p>
+            <h2 data-en="My Work" data-ar="أعمالي">My Work</h2>
+            <p class="section-subtitle" data-en="Here are some of my recent projects" data-ar="إليك بعض مشاريعي الأخيرة">Here are some of my recent projects</p>
             <div class="portfolio-grid">
                 <a href="https://mahdifoued007-max.github.io/mf-web-studio/" target="_blank" class="portfolio-card">
                     <div class="portfolio-image">🚀</div>
-                    <h3>Landing Page</h3>
-                    <p>Modern landing page with dark theme and animations</p>
+                    <h3 data-en="Landing Page" data-ar="صفحة هبوط">Landing Page</h3>
+                    <p data-en="Modern landing page with dark theme and animations" data-ar="صفحة هبوط عصرية بتصميم داكن وحركات">Modern landing page with dark theme and animations</p>
                 </a>
                 <a href="https://mahdifoued007-max.github.io/portfolio-v2/" target="_blank" class="portfolio-card">
                     <div class="portfolio-image">💼</div>
-                    <h3>Professional Website</h3>
-                    <p>Full website with services, portfolio, and contact form</p>
+                    <h3 data-en="Professional Website" data-ar="موقع احترافي">Professional Website</h3>
+                    <p data-en="Full website with services, portfolio, and contact form" data-ar="موقع كامل مع خدمات ومعرض أعمال ونموذج تواصل">Full website with services, portfolio, and contact form</p>
                 </a>
                 <a href="https://mahdifoued007-max.github.io/restaurant-website/" target="_blank" class="portfolio-card">
                     <div class="portfolio-image">🍕</div>
-                    <h3>Restaurant Website</h3>
-                    <p>Italian restaurant with menu, gallery, and delivery links</p>
+                    <h3 data-en="Restaurant Website" data-ar="موقع مطعم">Restaurant Website</h3>
+                    <p data-en="Italian restaurant with menu, gallery, and delivery links" data-ar="مطعم إيطالي مع قائمة ومعرض وروابط توصيل">Italian restaurant with menu, gallery, and delivery links</p>
                 </a>
             </div>
         </div>
@@ -90,8 +93,8 @@
     <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p class="section-subtitle">I'm available for freelance work. Let's build something great together.</p>
+            <h2 data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</h2>
+            <p class="section-subtitle" data-en="I'm available for freelance work. Let's build something great together." data-ar="أنا متاح للعمل الحر. لنبنِ شيئاً رائعاً معاً.">I'm available for freelance work. Let's build something great together.</p>
             <div class="contact-info">
                 <a href="mailto:mahdi.foued007@gmail.com" class="contact-item">
                     📧 mahdi.foued007@gmail.com
@@ -109,65 +112,69 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Mahdi Foued. All rights reserved.</p>
+            <p data-en="© 2026 Mahdi Foued. All rights reserved." data-ar="© 2026 مهدي فؤاد. جميع الحقوق محفوظة.">© 2026 Mahdi Foued. All rights reserved.</p>
         </div>
     </footer>
-<script>
-    // Typing Effect
-    const nameText = "Mahdi Foued";
-    let i = 0;
-    const typedElement = document.getElementById("typed-name");
 
-    function typeWriter() {
-        if (i < nameText.length) {
-            typedElement.innerHTML += nameText.charAt(i);
-            i++;
-            setTimeout(typeWriter, 150);
+    <script>
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'ar' : 'en';
+            document.documentElement.lang = currentLang;
+            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+            document.getElementById('langToggle').textContent = currentLang === 'en' ? 'AR' : 'EN';
+
+            document.querySelectorAll('[data-en][data-ar]').forEach(el => {
+                el.textContent = el.getAttribute('data-' + currentLang);
+            });
+
+            // Change font for Arabic
+            document.body.style.fontFamily = currentLang === 'ar' ? "'Cairo', sans-serif" : "'Poppins', sans-serif";
         }
-    }
-    window.addEventListener("load", typeWriter);
 
-    // Counter Animation
-    const counters = document.querySelectorAll('.counter');
-    const speed = 200;
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
 
-    const animateCounter = (counter) => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const inc = target / speed;
+        const animateCounter = (counter) => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const inc = target / speed;
 
-        if (count < target) {
-            counter.innerText = Math.ceil(count + inc);
-            setTimeout(() => animateCounter(counter), 20);
-        } else {
-            counter.innerText = target + "+";
-        }
-    };
-
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                counterObserver.unobserve(entry.target);
+            if (count < target) {
+                counter.innerText = Math.ceil(count + inc);
+                setTimeout(() => animateCounter(counter), 20);
+            } else {
+                counter.innerText = target + "+";
             }
+        };
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        // Scroll Reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.portfolio-card, .about, .stats').forEach(el => {
+            el.classList.add('reveal');
+            revealObserver.observe(el);
         });
-    }, { threshold: 0.5 });
+    </script>
 
-    counters.forEach(counter => counterObserver.observe(counter));
-
-    // Scroll Reveal
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('reveal-visible');
-            }
-        });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.portfolio-card, .about, .stats').forEach(el => {
-        el.classList.add('reveal');
-        revealObserver.observe(el);
-    });
-</script>
 </body>
 </html>

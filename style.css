@@ -305,3 +305,27 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+.lang-btn {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.lang-btn:hover {
+    background: #00d4aa;
+    transform: translateY(-2px);
+}
+
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] .nav-links {
+    flex-direction: row-reverse;
+}
